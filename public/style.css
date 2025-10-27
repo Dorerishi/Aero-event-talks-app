@@ -10,6 +10,7 @@ header {
   padding: 10px;
   border-bottom: 1px solid #343536;
   display: flex;
+  flex-direction: column; /* Changed to column to stack search bars */
   align-items: center;
 }
 
@@ -17,15 +18,18 @@ header {
     color: #d7dadc;
     font-weight: bold;
     font-size: 1.5rem;
-    margin: 0 auto;
+    margin: 0 auto 10px auto; /* Added bottom margin */
 }
 
 .search-container {
   width: 50%;
   margin: 0 auto;
+  display: flex; /* Added flex to arrange search bars horizontally */
+  gap: 10px; /* Space between search bars */
 }
 
-#search-bar {
+#search-bar,
+#speaker-search-bar { /* Added speaker search bar */
   width: 100%;
   padding: 10px;
   border-radius: 4px;
