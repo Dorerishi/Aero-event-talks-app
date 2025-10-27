@@ -2,7 +2,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const eventTitle = document.getElementById('event-title');
   const scheduleContainer = document.getElementById('schedule-container');
-  const searchBar = document.getElementById('search-bar');
+  const categorySearchBar = document.getElementById('search-bar');
+  const speakerSearchBar = document.getElementById('speaker-search-bar');
 
   let talksData = [];
 
@@ -63,14 +64,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  searchBar.addEventListener('input', (e) => {
-    const searchTerm = e.target.value.toLowerCase();
+  function filterSchedule() {
+    const categorySearchTerm = categorySearchBar.value.toLowerCase();
+    const speakerSearchTerm = speakerSearchBar.value.toLowerCase();
+
     const filteredSchedule = talksData.schedule.filter(item => {
       if (item.break) {
         return true;
       }
-      return item.talk.category.some(cat => cat.toLowerCase().includes(searchTerm));
+
+      const matchesCategory = item.talk.category.some(cat => cat.toLowerCase().includes(categorySearchTerm));
+      const matchesSpeaker = item.talk.speakers.some(speaker => speaker.toLowerCase().includes(speakerSearchTerm));
+
+      return matchesCategory && matchesSpeaker;
     });
     renderSchedule(filteredSchedule);
-  });
+  }
+
+  categorySearchBar.addEventListener('input', filterSchedule);
+  speakerSearchBar.addEventListener('input', filterSchedule);
 });
