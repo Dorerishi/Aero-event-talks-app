@@ -1,0 +1,96 @@
+body {
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  background-color: #1a1a1b;
+  color: #d7dadc;
+}
+
+header {
+  background-color: #1a1a1b;
+  padding: 10px;
+  border-bottom: 1px solid #343536;
+  display: flex;
+  align-items: center;
+}
+
+#event-title {
+    color: #d7dadc;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.search-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #343536;
+  background-color: #272729;
+  color: #d7dadc;
+}
+
+#schedule-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.schedule-item {
+  background-color: #1a1a1b;
+  border: 1px solid #343536;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: flex;
+}
+
+.schedule-item.break {
+  background-color: #272729;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.schedule-time {
+  width: 100px;
+  font-weight: bold;
+  color: #818384;
+}
+
+.talk-details {
+  flex-grow: 1;
+}
+
+.talk-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #d7dadc;
+}
+
+.talk-speakers {
+  font-size: 0.9rem;
+  color: #818384;
+  margin-bottom: 10px;
+}
+
+.talk-category {
+  display: inline-block;
+  background-color: #0079d3;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+.talk-description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #d7dadc;
+}

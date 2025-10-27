@@ -1,0 +1,70 @@
+
+{
+  "eventTitle": "HAL Aerospace Tech Symposium 2025",
+  "schedule": [
+    {
+      "time": "10:00 - 11:00",
+      "talk": {
+        "title": "Advancements in Avionics for Modern Combat Aircraft",
+        "speakers": ["Dr. R. K. Tyagi"],
+        "category": ["Avionics", "Combat Aircraft"],
+        "duration": "1 hour",
+        "description": "A look into the latest developments in avionics systems for the next generation of combat aircraft."
+      }
+    },
+    {
+      "time": "11:10 - 12:10",
+      "talk": {
+        "title": "The Future of Helicopter Technology",
+        "speakers": ["Mr. S. Anbuvelan"],
+        "category": ["Helicopters", "Rotary Wing"],
+        "duration": "1 hour",
+        "description": "Exploring the future of helicopter design, including advanced rotor systems and autonomous flight capabilities."
+      }
+    },
+    {
+      "time": "12:20 - 13:20",
+      "talk": {
+        "title": "Materials and Manufacturing for Aerospace Structures",
+        "speakers": ["Dr. D. K. Singh"],
+        "category": ["Materials Science", "Aerospace Engineering"],
+        "duration": "1 hour",
+        "description": "An overview of the advanced materials and manufacturing processes used in modern aerospace structures."
+      }
+    },
+    {
+      "time": "13:20 - 14:20",
+      "break": "Lunch Break"
+    },
+    {
+      "time": "14:30 - 15:30",
+      "talk": {
+        "title": "Unmanned Aerial Vehicles: Design and Applications",
+        "speakers": ["Mr. C. B. Ananthakrishnan", "Dr. Arup Chatterjee"],
+        "category": ["UAV", "Drones"],
+        "duration": "1 hour",
+        "description": "A comprehensive look at the design, development, and diverse applications of unmanned aerial vehicles."
+      }
+    },
+    {
+      "time": "15:40 - 16:40",
+      "talk": {
+        "title": "Propulsion Systems for High-Speed Flight",
+        "speakers": ["Mr. Mihir Kanti Mishra"],
+        "category": ["Propulsion", "Hypersonics"],
+        "duration": "1 hour",
+        "description": "A deep dive into the challenges and innovations in propulsion systems for high-speed and hypersonic aircraft."
+      }
+    },
+    {
+      "time": "16:50 - 17:50",
+      "talk": {
+        "title": "The Role of HAL in India's Space Programme",
+        "speakers": ["Mr. Jayesh Ranjan"],
+        "category": ["Space", "ISRO"],
+        "duration": "1 hour",
+        "description": "Exploring the contributions of Hindustan Aeronautics Limited to India's prestigious space exploration missions."
+      }
+    }
+  ]
+}
