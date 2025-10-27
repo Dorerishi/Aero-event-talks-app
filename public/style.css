@@ -98,3 +98,54 @@ header {
   line-height: 1.4;
   color: #d7dadc;
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  #event-title {
+    font-size: 1.2rem; /* Smaller font size for title */
+  }
+
+  .search-container {
+    width: 95%; /* Make search container wider on small screens */
+    flex-direction: column; /* Stack search bars vertically */
+    gap: 0; /* Remove gap when stacked */
+  }
+
+  #search-bar,
+  #speaker-search-bar {
+    width: 100%; /* Make search bars full width */
+    margin-bottom: 10px; /* Add space between stacked search bars */
+  }
+
+  #schedule-container {
+    width: 95%; /* Make schedule container wider on small screens */
+    margin: 10px auto; /* Adjust margin */
+  }
+
+  .schedule-item {
+    flex-direction: column; /* Stack time and talk details */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .schedule-time {
+    width: auto; /* Remove fixed width */
+    margin-bottom: 10px; /* Add space below time */
+    text-align: center; /* Center time */
+  }
+
+  .talk-title {
+    font-size: 1.1rem; /* Smaller font size for talk title */
+  }
+
+  .talk-speakers,
+  .talk-description {
+    font-size: 0.85rem; /* Smaller font size for details */
+  }
+
+  .talk-category {
+    font-size: 0.75rem; /* Smaller font size for categories */
+  }
+}
