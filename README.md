@@ -1,5 +1,7 @@
 # Aero Event Talks App
 
+![Website Screenshot](./images/website.png)
+
 This is a simple web application for a one-day event featuring technical talks on aerospace topics.
 
 ## Features
